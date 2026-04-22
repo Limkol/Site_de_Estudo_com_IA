@@ -1,8 +1,8 @@
-import express from 'express'
-import { gerarQuestoes } from '../controllers/questoesController.js'
+import express from "express";
+import { gerarQuestoes } from "../controllers/questoesController.js";
 
-const router = express.Router()
+const router = express.Router();
 
-router.post('/', gerarQuestoes)
+router.post("/", gerarQuestoes);
 
-export default router
+export default router;

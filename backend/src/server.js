@@ -1,28 +1,28 @@
-import express from 'express'
-import cors from 'cors'
-import dotenv from 'dotenv'
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
 
-import resumoRoutes from './routes/resumoRoutes.js'
-import planoRoutes from './routes/planoRoutes.js'
-import questoesRoutes from './routes/questoesRoutes.js'
+import resumoRoutes from "./routes/resumoRoutes.js";
+import planoRoutes from "./routes/planoRoutes.js";
+import questoesRoutes from "./routes/questoesRoutes.js";
 
-dotenv.config()
+dotenv.config();
 
-const app = express()
+const app = express();
 
-app.use(cors())
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Backend do Site de Estudos com IA funcionando!' })
-})
+app.get("/", (req, res) => {
+  res.json({ message: "Backend do Site de Estudos com IA funcionando!" });
+});
 
-app.use('/api/resumo', resumoRoutes)
-app.use('/api/plano-estudo', planoRoutes)
-app.use('/api/questoes', questoesRoutes)
+app.use("/api/resumo", resumoRoutes);
+app.use("/api/plano-estudo", planoRoutes);
+app.use("/api/questoes", questoesRoutes);
 
-const PORT = 3000
+const PORT = 3000;
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`)
-})
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});

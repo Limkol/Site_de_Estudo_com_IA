@@ -1,4 +1,4 @@
-import './ResumoPage.css'
+import "./ResumoPage.css";
 
 function ResumoPage() {
   return (
@@ -18,7 +18,7 @@ function ResumoPage() {
         <button className="resumo-button">Gerar resumo</button>
       </div>
     </div>
-  )
+  );
 }
 
-export default ResumoPage
+export default ResumoPage;

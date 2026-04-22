@@ -1,4 +1,4 @@
-import './PlanoPage.css'
+import "./PlanoPage.css";
 
 function PlanoPage() {
   return (
@@ -33,7 +33,7 @@ function PlanoPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default PlanoPage
+export default PlanoPage;

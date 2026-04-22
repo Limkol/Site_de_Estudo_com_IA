@@ -1,8 +1,8 @@
-import express from 'express'
-import { criarPlanoDeEstudo } from '../controllers/planoController.js'
+import express from "express";
+import { criarPlanoDeEstudo } from "../controllers/planoController.js";
 
-const router = express.Router()
+const router = express.Router();
 
-router.post('/', criarPlanoDeEstudo)
+router.post("/", criarPlanoDeEstudo);
 
-export default router
+export default router;
