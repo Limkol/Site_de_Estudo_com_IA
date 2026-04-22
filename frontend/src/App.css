@@ -43,7 +43,12 @@
   gap: 16px;
 }
 
+.home-button-link {
+  text-decoration: none;
+}
+
 .home-button {
+  width: 100%;
   background-color: #2563eb;
   color: white;
   border: none;

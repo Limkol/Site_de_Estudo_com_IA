@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
         </p>
 
         <div className="buttons-container">
-          <button className="home-button">Gerar resumo</button>
+          <Link to="/resumo" className="home-button-link">
+            <button className="home-button">Gerar resumo</button>
+          </Link>
+
           <button className="home-button">Criar plano de estudo</button>
           <button className="home-button">Gerar questões</button>
         </div>
