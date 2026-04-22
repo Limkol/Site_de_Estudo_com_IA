@@ -17,8 +17,11 @@ function App() {
           <Link to="/resumo" className="home-button-link">
             <button className="home-button">Gerar resumo</button>
           </Link>
+          
+          <Link to="/plano-estudo" className="home-button-link">
+            <button className="home-button">Criar plano de estudo</button>
+          </Link>
 
-          <button className="home-button">Criar plano de estudo</button>
           <button className="home-button">Gerar questões</button>
         </div>
       </main>

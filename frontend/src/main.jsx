@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import App from './App.jsx'
 import ResumoPage from './pages/ResumoPage.jsx'
+import PlanoPage from './pages/PlanoPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/resumo" element={<ResumoPage />} />
+        <Route path="/plano-estudo" element={<PlanoPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

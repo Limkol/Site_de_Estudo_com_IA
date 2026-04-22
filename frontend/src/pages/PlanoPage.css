@@ -1,0 +1,75 @@
+.plano-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf4ff, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.plano-content {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.plano-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.plano-description {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.plano-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plano-input,
+.plano-textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.plano-input:focus,
+.plano-textarea:focus {
+  border-color: #2563eb;
+}
+
+.plano-textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.plano-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.plano-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
