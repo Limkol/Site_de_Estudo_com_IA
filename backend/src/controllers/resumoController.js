@@ -9,7 +9,6 @@ export function gerarResumo(req, res) {
 
   return res.json({
     mensagem: "Rota de resumo funcionando.",
-    textoRecebido: texto,
-    resumo: "Aqui ficará o resumo gerado pela IA futuramente.",
+    resumo: `Resumo gerado a partir do texto: ${texto}`,
   });
 }

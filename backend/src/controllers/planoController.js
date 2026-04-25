@@ -1,16 +1,14 @@
 export function criarPlanoDeEstudo(req, res) {
-  const { tema, dias } = req.body;
+  const { tema, dias, objetivo } = req.body;
 
-  if (!tema || !dias) {
+  if (!tema || !dias || !objetivo) {
     return res.status(400).json({
-      error: 'Os campos "tema" e "dias" são obrigatórios.',
+      error: 'Os campos "tema", "dias" e "objetivo" são obrigatórios.',
     });
   }
 
   return res.json({
     mensagem: "Rota de plano de estudo funcionando.",
-    temaRecebido: tema,
-    diasRecebidos: dias,
-    plano: "Aqui ficará o plano de estudo gerado pela IA futuramente.",
+    plano: `Plano de estudo gerado para o tema "${tema}", com duração de ${dias} dias. Objetivo: ${objetivo}`,
   });
 }
