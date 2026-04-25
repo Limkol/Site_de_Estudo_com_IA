@@ -64,3 +64,29 @@
 .resumo-button:hover {
   background-color: #1d4ed8;
 }
+
+.resumo-erro {
+  margin-top: 20px;
+  color: #dc2626;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.resumo-resultado {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+}
+
+.resumo-resultado h2 {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.resumo-resultado p {
+  color: #334155;
+  line-height: 1.6;
+}
