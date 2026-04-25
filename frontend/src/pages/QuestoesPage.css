@@ -79,3 +79,34 @@
   background-color: #1d4ed8;
   transform: translateY(-2px);
 }
+
+.questoes-erro {
+  margin-top: 20px;
+  color: #dc2626;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.questoes-resultado {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+}
+
+.questoes-resultado h2 {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.questoes-resultado ol {
+  padding-left: 24px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.questoes-resultado li {
+  margin-bottom: 8px;
+}
