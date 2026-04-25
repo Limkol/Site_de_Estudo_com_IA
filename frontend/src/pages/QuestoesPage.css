@@ -101,12 +101,8 @@
   margin-bottom: 12px;
 }
 
-.questoes-resultado ol {
-  padding-left: 24px;
+.questoes-resultado p {
   color: #334155;
-  line-height: 1.6;
-}
-
-.questoes-resultado li {
-  margin-bottom: 8px;
+  line-height: 1.7;
+  white-space: pre-line;
 }

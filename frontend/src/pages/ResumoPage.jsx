@@ -5,7 +5,7 @@ function ResumoPage() {
   const [texto, setTexto] = useState("");
   const [resumoGerado, setResumoGerado] = useState("");
   const [erro, setErro] = useState("");
-
+  
   async function handleGerarResumo() {
     setErro("");
     setResumoGerado("");

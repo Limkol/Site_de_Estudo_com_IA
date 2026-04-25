@@ -4,12 +4,12 @@ import "./QuestoesPage.css";
 function QuestoesPage() {
   const [texto, setTexto] = useState("");
   const [quantidade, setQuantidade] = useState("");
-  const [questoesGeradas, setQuestoesGeradas] = useState([]);
+  const [questoesGeradas, setQuestoesGeradas] = useState("");
   const [erro, setErro] = useState("");
 
   async function handleGerarQuestoes() {
     setErro("");
-    setQuestoesGeradas([]);
+    setQuestoesGeradas("");
 
     try {
       const resposta = await fetch("http://localhost:3000/api/questoes", {
@@ -65,15 +65,10 @@ function QuestoesPage() {
 
         {erro && <p className="questoes-erro">{erro}</p>}
 
-        {questoesGeradas.length > 0 && (
+        {questoesGeradas && (
           <div className="questoes-resultado">
             <h2>Questões geradas</h2>
-
-            <ol>
-              {questoesGeradas.map((questao, index) => (
-                <li key={index}>{questao}</li>
-              ))}
-            </ol>
+            <p>{questoesGeradas}</p>
           </div>
         )}
       </div>

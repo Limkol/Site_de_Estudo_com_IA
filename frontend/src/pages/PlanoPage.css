@@ -97,5 +97,6 @@
 
 .plano-resultado p {
   color: #334155;
-  line-height: 1.6;
+  line-height: 1.7;
+  white-space: pre-line;
 }
