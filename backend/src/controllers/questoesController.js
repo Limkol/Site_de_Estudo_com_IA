@@ -1,3 +1,4 @@
+import { salvarHistorico } from "../services/historicoService.js";
 import { gerarTexto } from "../services/geminiService.js";
 
 export async function gerarQuestoes(req, res) {
@@ -42,9 +43,11 @@ export async function gerarQuestoes(req, res) {
 
       Texto:
       ${texto}
-      `;
+    `;
 
     const questoes = await gerarTexto(prompt);
+
+    await salvarHistorico("questoes", texto, questoes);
 
     return res.json({
       mensagem: "Questões geradas com IA.",

@@ -1,3 +1,4 @@
+import { salvarHistorico } from "../services/historicoService.js";
 import { gerarTexto } from "../services/geminiService.js";
 
 export async function gerarResumo(req, res) {
@@ -41,9 +42,11 @@ export async function gerarResumo(req, res) {
 
       Texto:
       ${texto}
-      `;
+    `;
 
     const resumo = await gerarTexto(prompt);
+
+    await salvarHistorico("resumo", texto, resumo);
 
     return res.json({
       mensagem: "Resumo gerado por IA.",

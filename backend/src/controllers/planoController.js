@@ -1,3 +1,4 @@
+import { salvarHistorico } from "../services/historicoService.js";
 import { gerarTexto } from "../services/geminiService.js";
 
 export async function criarPlanoDeEstudo(req, res) {
@@ -50,9 +51,17 @@ export async function criarPlanoDeEstudo(req, res) {
       - A revisão final deve estar dentro do último dia do cronograma.
       - Não crie uma seção separada chamada "REVISÃO FINAL".
       - Se o plano tiver 7 dias, o Dia 7 deve conter estudo + revisão final.
-      `;
+    `;
 
     const plano = await gerarTexto(prompt);
+
+    const textoOriginal = `
+      Tema: ${tema}
+      Dias: ${dias}
+      Objetivo: ${objetivo}
+    `;
+
+    await salvarHistorico("plano", textoOriginal, plano);
 
     return res.json({
       mensagem: "Plano de estudo gerado com IA.",
