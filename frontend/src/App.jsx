@@ -25,6 +25,10 @@ function App() {
           <Link to="/questoes" className="home-button-link">
             <button className="home-button">Gerar questões</button>
           </Link>
+
+          <Link to="/historico" className="home-button-link">
+            <button className="home-button">Ver histórico</button>
+          </Link>
         </div>
       </main>
     </div>

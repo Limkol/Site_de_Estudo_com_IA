@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import ResumoPage from "./pages/ResumoPage.jsx";
 import PlanoPage from "./pages/PlanoPage.jsx";
 import QuestoesPage from "./pages/QuestoesPage.jsx";
+import HistoricoPage from "./pages/HistoricoPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/resumo" element={<ResumoPage />} />
         <Route path="/plano-estudo" element={<PlanoPage />} />
         <Route path="/questoes" element={<QuestoesPage />} />
+        <Route path="/historico" element={<HistoricoPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
