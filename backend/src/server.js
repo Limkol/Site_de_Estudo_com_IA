@@ -1,12 +1,12 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-
-dotenv.config();
-
 import resumoRoutes from "./routes/resumoRoutes.js";
 import planoRoutes from "./routes/planoRoutes.js";
 import questoesRoutes from "./routes/questoesRoutes.js";
+import historicoRoutes from "./routes/historicoRoutes.js";
+
+dotenv.config();
 
 const app = express();
 
@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
 app.use("/api/resumo", resumoRoutes);
 app.use("/api/plano-estudo", planoRoutes);
 app.use("/api/questoes", questoesRoutes);
+app.use("/api/historico", historicoRoutes);
 
 const PORT = process.env.PORT || 3000;
 
