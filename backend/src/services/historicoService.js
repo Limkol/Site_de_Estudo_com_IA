@@ -17,7 +17,7 @@ export async function listarHistorico() {
       tipo,
       texto_original,
       resposta_ia,
-      criado_em
+      strftime('%H:%M:%S %d/%m/%Y', datetime(criado_em, '-3 hours')) AS criado_em
     FROM historico
     ORDER BY criado_em DESC
   `);
