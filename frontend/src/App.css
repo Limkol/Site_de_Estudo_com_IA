@@ -63,3 +63,69 @@
   background-color: #1d4ed8;
   transform: translateY(-2px);
 }
+
+.theme-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.theme-toggle-button {
+  background-color: #f8fafc;
+  color: #1e3a8a;
+  border: 1px solid #bfdbfe;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: #eff6ff;
+  transform: translateY(-2px);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.home-container.dark-mode {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.home-container.dark-mode .home-content {
+  background-color: #1e293b;
+}
+
+.home-container.dark-mode .project-title {
+  color: #bfdbfe;
+}
+
+.home-container.dark-mode .project-description {
+  color: #e2e8f0;
+}
+
+.home-container.dark-mode .home-button {
+  background-color: #3b82f6;
+}
+
+.home-container.dark-mode .home-button:hover {
+  background-color: #2563eb;
+}
+
+.home-container.dark-mode .theme-toggle-button {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-color: #475569;
+}
+
+.home-container.dark-mode .theme-toggle-button:hover {
+  background-color: #1e293b;
+}

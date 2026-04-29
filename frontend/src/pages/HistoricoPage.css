@@ -81,5 +81,42 @@
 
 .historico-data {
   font-size: 0.9rem;
-  color: #64748b;
+}
+
+body.dark-mode .historico-container {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body.dark-mode .historico-content {
+  background-color: #1e293b;
+}
+
+body.dark-mode .historico-title {
+  color: #bfdbfe;
+}
+
+body.dark-mode .historico-description {
+  color: #e2e8f0;
+}
+
+body.dark-mode .historico-erro {
+  color: #f87171;
+}
+
+body.dark-mode .historico-vazio {
+  color: #e2e8f0;
+}
+
+body.dark-mode .historico-item {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .historico-item h2,
+body.dark-mode .historico-item h3 {
+  color: #bfdbfe;
+}
+
+body.dark-mode .historico-item p {
+  color: #e2e8f0;
 }

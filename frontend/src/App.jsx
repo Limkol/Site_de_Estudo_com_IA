@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./App.css";
 
-function App() {
+function App({ temaEscuro, setTemaEscuro }) {
   return (
-    <div className="home-container">
+    <div className={`home-container ${temaEscuro ? "dark-mode" : ""}`}>
       <main className="home-content">
         <h1 className="project-title">Site de Estudos com IA</h1>
 
@@ -29,6 +29,15 @@ function App() {
           <Link to="/historico" className="home-button-link">
             <button className="home-button">Ver histórico</button>
           </Link>
+        </div>
+
+        <div className="theme-toggle-container">
+          <button
+            className="theme-toggle-button"
+            onClick={() => setTemaEscuro(!temaEscuro)}
+          >
+            {temaEscuro ? "☀️ Modo claro" : "🌙 Modo escuro"}
+          </button>
         </div>
       </main>
     </div>

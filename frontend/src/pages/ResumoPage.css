@@ -63,6 +63,7 @@
 
 .resumo-button:hover {
   background-color: #1d4ed8;
+  transform: translateY(-2px);
 }
 
 .resumo-erro {
@@ -90,4 +91,59 @@
   color: #334155;
   line-height: 1.7;
   white-space: pre-line;
+}
+
+body.dark-mode .resumo-container {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body.dark-mode .resumo-content {
+  background-color: #1e293b;
+}
+
+body.dark-mode .resumo-title {
+  color: #bfdbfe;
+}
+
+body.dark-mode .resumo-description {
+  color: #e2e8f0;
+}
+
+body.dark-mode .resumo-textarea {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .resumo-textarea::placeholder {
+  color: #94a3b8;
+}
+
+body.dark-mode .resumo-textarea:focus {
+  border-color: #3b82f6;
+}
+
+body.dark-mode .resumo-button {
+  background-color: #3b82f6;
+}
+
+body.dark-mode .resumo-button:hover {
+  background-color: #2563eb;
+}
+
+body.dark-mode .resumo-erro {
+  color: #f87171;
+}
+
+body.dark-mode .resumo-resultado {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .resumo-resultado h2 {
+  color: #bfdbfe;
+}
+
+body.dark-mode .resumo-resultado p {
+  color: #e2e8f0;
 }
